@@ -49,7 +49,7 @@ bool WelcomeLayer::init(){
         CCSprite* startGamePress = CCSprite::create( "menu.png", CCRectMake(0, 33, 126, 33) );
         CCSprite* startGameDisable = CCSprite::create( "menu.png", CCRectMake(0, 66, 126, 33) );
         
-        CCMenuItemSprite* startGameMenuItem = CCMenuItemSprite::create( startGameNormal, startGamePress, startGameDisable, this,NULL);
+        CCMenuItemSprite* startGameMenuItem = CCMenuItemSprite::create( startGameNormal, startGamePress, startGameDisable, this,menu_selector(WelcomeLayer::menu_startgame_callback));
         
         
         
@@ -58,7 +58,7 @@ bool WelcomeLayer::init(){
         CCSprite* optionPress = CCSprite::create( "menu.png", CCRectMake(126, 33, 126, 33) );
         CCSprite* optionDisable = CCSprite::create( "menu.png", CCRectMake(126, 66, 126, 33) );
         
-        CCMenuItemSprite* optionMenuItem = CCMenuItemSprite::create( optionNormal, optionPress, optionDisable, this,NULL);
+        CCMenuItemSprite* optionMenuItem = CCMenuItemSprite::create( optionNormal, optionPress, optionDisable, this,menu_selector(WelcomeLayer::menu_option_callback));
         
         
         //  构建关于菜单
@@ -66,7 +66,7 @@ bool WelcomeLayer::init(){
         CCSprite* aboutPress = CCSprite::create( "menu.png", CCRectMake(252, 33, 126, 33) );
         CCSprite* aboutDisable = CCSprite::create( "menu.png", CCRectMake(252, 66, 126, 33) );
         
-        CCMenuItemSprite* aboutMenuItem = CCMenuItemSprite::create( aboutNormal, aboutPress, aboutDisable, this,NULL);
+        CCMenuItemSprite* aboutMenuItem = CCMenuItemSprite::create( aboutNormal, aboutPress, aboutDisable, this,menu_selector(WelcomeLayer::menu_about_callback));
         
         CCMenu* menu = CCMenu::create( startGameMenuItem, optionMenuItem,aboutMenuItem, NULL );
         
@@ -108,4 +108,28 @@ void WelcomeLayer::onEnter(){
     
     
 
+}
+
+//  开始游戏按钮回调事件
+void WelcomeLayer::menu_startgame_callback( CCObject* pSender ){
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(button_effect_sound);
+    
+    CCLOG( "START GAME" );
+
+}
+
+
+//  关于选项的回调事件
+void WelcomeLayer::menu_option_callback( CCObject* pSender ){
+     CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(button_effect_sound);
+    
+        CCLOG( "OPTION" );
+}
+
+//  关于游戏的回调事件
+void WelcomeLayer::menu_about_callback( CCObject* pSender ){
+
+     CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(button_effect_sound);
+    
+        CCLOG( "ABOUT GAME" );
 }

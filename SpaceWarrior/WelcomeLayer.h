@@ -28,8 +28,13 @@ public:
     CREATE_FUNC( WelcomeLayer );
     
     virtual void onEnter();
-    
-    
+
+
+    void menu_startgame_callback( CCObject* pSender );
+
+    void menu_option_callback( CCObject* pSender );
+
+    void menu_about_callback( CCObject* pSender );
 
 
 
