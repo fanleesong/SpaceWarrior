@@ -10,6 +10,11 @@
 #define SpaceWarrior_GameResources_h
 
 
+//  图片
+static char *gaming_background_image = "";
+
+
+//  Music
  static char *welcome_background_music = "Music/mainMainMusic.mp3"; //  开始界面背景音乐
  static char *gaming_music = "Music/bgMusic.mp3";   //  游戏场景中的游戏
 
