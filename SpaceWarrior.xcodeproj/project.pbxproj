@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE14005516DE476C0090FDE1 /* menuTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = CE14005316DE476C0090FDE1 /* menuTitle.png */; };
+		CE14005616DE476C0090FDE1 /* Music in Resources */ = {isa = PBXBuildFile; fileRef = CE14005416DE476C0090FDE1 /* Music */; };
 		CE2ACD0116DE2E4400A26673 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2ACD0016DE2E4400A26673 /* QuartzCore.framework */; };
 		CE2ACD0316DE2E4400A26673 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2ACD0216DE2E4400A26673 /* OpenGLES.framework */; };
 		CE2ACD0516DE2E4400A26673 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2ACD0416DE2E4400A26673 /* OpenAL.framework */; };
@@ -208,6 +210,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE14005116DE46F90090FDE1 /* GameResources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameResources.h; path = Classes/GameResources.h; sourceTree = "<group>"; };
+		CE14005316DE476C0090FDE1 /* menuTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuTitle.png; path = Resources/menuTitle.png; sourceTree = "<group>"; };
+		CE14005416DE476C0090FDE1 /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Music; path = Resources/Music; sourceTree = "<group>"; };
 		CE2ACCFC16DE2E4400A26673 /* SpaceWarrior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceWarrior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2ACD0016DE2E4400A26673 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CE2ACD0216DE2E4400A26673 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -709,6 +714,8 @@
 		CE2ACD1116DE2E4400A26673 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE14005316DE476C0090FDE1 /* menuTitle.png */,
+				CE14005416DE476C0090FDE1 /* Music */,
 				CE2ACFB416DE3C9A00A26673 /* loading.png */,
 				CE2ACFB516DE3C9A00A26673 /* logo.png */,
 				CE2ACFB616DE3C9A00A26673 /* menu.png */,
@@ -1528,6 +1535,7 @@
 				CE2ACF9E16DE2E4700A26673 /* AppDelegate.cpp */,
 				CE2ACFAB16DE3AD300A26673 /* WelcomeLayer.cpp */,
 				CE2ACFAC16DE3AD300A26673 /* WelcomeLayer.h */,
+				CE14005116DE46F90090FDE1 /* GameResources.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1597,6 +1605,8 @@
 				CE2ACFB716DE3C9A00A26673 /* loading.png in Resources */,
 				CE2ACFB816DE3C9A00A26673 /* logo.png in Resources */,
 				CE2ACFB916DE3C9A00A26673 /* menu.png in Resources */,
+				CE14005516DE476C0090FDE1 /* menuTitle.png in Resources */,
+				CE14005616DE476C0090FDE1 /* Music in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

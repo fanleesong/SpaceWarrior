@@ -99,3 +99,13 @@ CCScene* WelcomeLayer::scene(){
     
     return sc;
 }
+
+void WelcomeLayer::onEnter(){
+
+    CCLayer::onEnter();
+    
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(welcome_background_music, true );
+    
+    
+
+}
