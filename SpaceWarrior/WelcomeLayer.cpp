@@ -7,7 +7,7 @@
 //
 
 #include "WelcomeLayer.h"
-
+#include "GamingLayer.h"
 
 WelcomeLayer::WelcomeLayer(){}
 WelcomeLayer::~WelcomeLayer(){}
@@ -115,6 +115,8 @@ void WelcomeLayer::menu_startgame_callback( CCObject* pSender ){
     CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(button_effect_sound);
     
     CCLOG( "START GAME" );
+    
+    CCDirector::sharedDirector()->pushScene( CCTransitionFade::create( 0.5f, GamingLayer::scene()));
 
 }
 

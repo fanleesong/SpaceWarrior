@@ -30,6 +30,7 @@ bool GamingLayer::init(){
 }
 
 
+//  添加并初始化布景控件
 void GamingLayer::setupViews(){
     
     CCSize size = CCDirector::sharedDirector()->getWinSize();
