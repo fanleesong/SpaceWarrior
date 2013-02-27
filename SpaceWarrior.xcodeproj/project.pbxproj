@@ -201,7 +201,10 @@
 		CE2ACF9216DE2E4700A26673 /* CCTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2ACF9116DE2E4700A26673 /* CCTableViewCell.cpp */; };
 		CE2ACF9616DE2E4700A26673 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2ACF9516DE2E4700A26673 /* HttpClient.cpp */; };
 		CE2ACF9F16DE2E4700A26673 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2ACF9E16DE2E4700A26673 /* AppDelegate.cpp */; };
-		CE2ACFA216DE2E4700A26673 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2ACFA116DE2E4700A26673 /* HelloWorldScene.cpp */; };
+		CE2ACFAD16DE3AD300A26673 /* WelcomeLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2ACFAB16DE3AD300A26673 /* WelcomeLayer.cpp */; };
+		CE2ACFB716DE3C9A00A26673 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2ACFB416DE3C9A00A26673 /* loading.png */; };
+		CE2ACFB816DE3C9A00A26673 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2ACFB516DE3C9A00A26673 /* logo.png */; };
+		CE2ACFB916DE3C9A00A26673 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2ACFB616DE3C9A00A26673 /* menu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -632,8 +635,11 @@
 		CE2ACF9B16DE2E4700A26673 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		CE2ACF9D16DE2E4700A26673 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		CE2ACF9E16DE2E4700A26673 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		CE2ACFA016DE2E4700A26673 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		CE2ACFA116DE2E4700A26673 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		CE2ACFAB16DE3AD300A26673 /* WelcomeLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeLayer.cpp; sourceTree = "<group>"; };
+		CE2ACFAC16DE3AD300A26673 /* WelcomeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeLayer.h; sourceTree = "<group>"; };
+		CE2ACFB416DE3C9A00A26673 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = Resources/loading.png; sourceTree = "<group>"; };
+		CE2ACFB516DE3C9A00A26673 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
+		CE2ACFB616DE3C9A00A26673 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Resources/menu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -703,6 +709,9 @@
 		CE2ACD1116DE2E4400A26673 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE2ACFB416DE3C9A00A26673 /* loading.png */,
+				CE2ACFB516DE3C9A00A26673 /* logo.png */,
+				CE2ACFB616DE3C9A00A26673 /* menu.png */,
 				CE2ACD1216DE2E4400A26673 /* CloseNormal.png */,
 				CE2ACD1416DE2E4400A26673 /* CloseSelected.png */,
 				CE2ACD1616DE2E4400A26673 /* Default.png */,
@@ -1517,8 +1526,8 @@
 			children = (
 				CE2ACF9D16DE2E4700A26673 /* AppDelegate.h */,
 				CE2ACF9E16DE2E4700A26673 /* AppDelegate.cpp */,
-				CE2ACFA016DE2E4700A26673 /* HelloWorldScene.h */,
-				CE2ACFA116DE2E4700A26673 /* HelloWorldScene.cpp */,
+				CE2ACFAB16DE3AD300A26673 /* WelcomeLayer.cpp */,
+				CE2ACFAC16DE3AD300A26673 /* WelcomeLayer.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1585,6 +1594,9 @@
 				CE2ACD2516DE2E4400A26673 /* Icon@2x.png in Resources */,
 				CE2ACD2716DE2E4400A26673 /* iTunesArtwork in Resources */,
 				CE2ACDB916DE2E4500A26673 /* ChangeLog in Resources */,
+				CE2ACFB716DE3C9A00A26673 /* loading.png in Resources */,
+				CE2ACFB816DE3C9A00A26673 /* logo.png in Resources */,
+				CE2ACFB916DE3C9A00A26673 /* menu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1768,7 +1780,7 @@
 				CE2ACF9216DE2E4700A26673 /* CCTableViewCell.cpp in Sources */,
 				CE2ACF9616DE2E4700A26673 /* HttpClient.cpp in Sources */,
 				CE2ACF9F16DE2E4700A26673 /* AppDelegate.cpp in Sources */,
-				CE2ACFA216DE2E4700A26673 /* HelloWorldScene.cpp in Sources */,
+				CE2ACFAD16DE3AD300A26673 /* WelcomeLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1900,6 +1912,7 @@
 				CE2ACFA716DE2E4800A26673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
