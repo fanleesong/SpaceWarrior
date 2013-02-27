@@ -32,6 +32,48 @@ bool WelcomeLayer::init(){
         
         this->addChild( background );
         
+        CCSprite* pLogo = CCSprite::create( "logo.png" );
+        
+        CC_BREAK_IF( !pLogo );
+        
+        pLogo->setPosition( ccp( size.width / 2, size.height - pLogo->getContentSize().height - 10 ) );
+        
+        this->addChild( pLogo );
+        
+        
+        //  构建菜单按钮
+        
+        
+        //  构建开始游戏菜单
+        CCSprite* startGameNormal = CCSprite::create( "menu.png", CCRectMake(0, 0, 126, 33) );
+        CCSprite* startGamePress = CCSprite::create( "menu.png", CCRectMake(0, 33, 126, 33) );
+        CCSprite* startGameDisable = CCSprite::create( "menu.png", CCRectMake(0, 66, 126, 33) );
+        
+        CCMenuItemSprite* startGameMenuItem = CCMenuItemSprite::create( startGameNormal, startGamePress, startGameDisable, this,NULL);
+        
+        
+        
+        //  构建选项菜单
+        CCSprite* optionNormal = CCSprite::create( "menu.png", CCRectMake(126, 0, 126, 33) );
+        CCSprite* optionPress = CCSprite::create( "menu.png", CCRectMake(126, 33, 126, 33) );
+        CCSprite* optionDisable = CCSprite::create( "menu.png", CCRectMake(126, 66, 126, 33) );
+        
+        CCMenuItemSprite* optionMenuItem = CCMenuItemSprite::create( optionNormal, optionPress, optionDisable, this,NULL);
+        
+        
+        //  构建关于菜单
+        CCSprite* aboutNormal = CCSprite::create( "menu.png", CCRectMake(252, 0, 126, 33) );
+        CCSprite* aboutPress = CCSprite::create( "menu.png", CCRectMake(252, 33, 126, 33) );
+        CCSprite* aboutDisable = CCSprite::create( "menu.png", CCRectMake(252, 66, 126, 33) );
+        
+        CCMenuItemSprite* aboutMenuItem = CCMenuItemSprite::create( aboutNormal, aboutPress, aboutDisable, this,NULL);
+        
+        CCMenu* menu = CCMenu::create( startGameMenuItem, optionMenuItem,aboutMenuItem, NULL );
+        
+        menu->alignItemsVerticallyWithPadding( 10 );
+        menu->setPosition( ccp( size.width / 2, pLogo->getPositionY() -pLogo->getContentSize().height - 10 ) );
+
+        this->addChild( menu );
         sRect = true;
     } while ( 0 );
     
