@@ -27,6 +27,8 @@ public:
     
     void setupViews();
     
-CREATE_FUNC( GamingLayer );
+    CREATE_FUNC( GamingLayer );
+    
+void background_scroll_logic( float t );
 };
 #endif /* defined(__SpaceWarrior__GamingLayer__) */

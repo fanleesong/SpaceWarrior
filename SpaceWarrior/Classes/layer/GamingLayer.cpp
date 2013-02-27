@@ -35,11 +35,22 @@ void GamingLayer::setupViews(){
     
     CCSize size = CCDirector::sharedDirector()->getWinSize();
     
-    CCSprite* background = CCSprite::create( "bg01.jpg" );
-    background->setPosition( CCPointZero );
-    background->setAnchorPoint( CCPointZero );
+    CCSprite* background1 = CCSprite::create( "bg01.jpg" );
+    background1->setPosition( CCPointZero );
+    background1->setAnchorPoint( CCPointZero );
     
-    this->addChild( background );
+    this->addChild( background1,0,886 );
+    
+    
+    CCSprite* background2 = CCSprite::create( "bg01.jpg" );
+    background2->setPosition( ccp(0,576) );
+    background2->setAnchorPoint( CCPointZero );
+    
+    this->addChild( background2,0,887 );
+    
+    
+    this->schedule( schedule_selector(GamingLayer::background_scroll_logic),0.1f);
+    
     
 }
 CCScene* GamingLayer::scene(){
@@ -58,5 +69,20 @@ CCScene* GamingLayer::scene(){
     
     return sc;
     
+
+}
+
+void GamingLayer::background_scroll_logic( float t ){
+    
+    
+
+    getChildByTag( 886)->setPositionY(     getChildByTag( 886)->getPositionY() - 5);
+    getChildByTag( 887)->setPositionY( 576 + getChildByTag( 886)->getPositionY() );
+    
+    if( getChildByTag( 887)->getPositionY() <= 0){
+    
+        getChildByTag( 886)->setPositionY( 0 );
+    }
+
 
 }
