@@ -15,14 +15,18 @@ GamingLayer::~GamingLayer(){}
 
 bool GamingLayer::init(){
 
-    if( !CCLayer::init()){
+    bool sRect = false;
+    
+    do {
+        CC_BREAK_IF(!CCLayer::init());
         
         setupViews();
         
-        return true;
-    }
+        sRect = true;
+        
+    } while (0);
     
-    return false;
+    return sRect;
 }
 
 
@@ -30,8 +34,28 @@ void GamingLayer::setupViews(){
     
     CCSize size = CCDirector::sharedDirector()->getWinSize();
     
-    CCSprite* background = CCSprite::create( "" );
+    CCSprite* background = CCSprite::create( "bg01.jpg" );
+    background->setPosition( CCPointZero );
+    background->setAnchorPoint( CCPointZero );
     
+    this->addChild( background );
     
 }
-CCScene* GamingLayer::scene(){}
+CCScene* GamingLayer::scene(){
+    CCScene* sc = NULL;
+    
+    do {
+        sc = CCScene::create();
+        
+        CC_BREAK_IF( !sc );
+        
+        GamingLayer* layer = GamingLayer::create();
+        CC_BREAK_IF( !layer );
+        
+        sc->addChild( layer );
+    } while (0);
+    
+    return sc;
+    
+
+}

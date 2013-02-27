@@ -11,7 +11,7 @@
 
 
 //  图片
-static char *gaming_background_image = "";
+static char *gaming_background_image = "bg01.jpg";
 
 
 //  Music
