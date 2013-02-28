@@ -72,6 +72,7 @@ CCScene* GamingLayer::scene(){
 
 }
 
+//  背景滚动的逻辑	
 void GamingLayer::background_scroll_logic( float t ){
     
     
@@ -85,4 +86,10 @@ void GamingLayer::background_scroll_logic( float t ){
     }
 
 
+}
+void GamingLayer::onEnter(){
+
+    CCLayer::onEnter();
+      CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(gaming_music, true );
+    
 }

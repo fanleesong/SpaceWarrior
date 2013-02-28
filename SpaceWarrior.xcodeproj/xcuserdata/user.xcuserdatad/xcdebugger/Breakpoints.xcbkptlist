@@ -26,12 +26,4 @@
          endingLineNumber = "1">
       </FileBreakpoint>
    </FileBreakpoints>
-   <SymbolicBreakpoints>
-      <AddressBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         symbolName = "*0xd19318">
-      </AddressBreakpoint>
-   </SymbolicBreakpoints>
 </Bucket>

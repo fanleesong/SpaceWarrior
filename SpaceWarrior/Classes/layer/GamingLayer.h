@@ -27,6 +27,9 @@ public:
     
     void setupViews();
     
+    
+    virtual void onEnter();
+    
     CREATE_FUNC( GamingLayer );
     
 void background_scroll_logic( float t );

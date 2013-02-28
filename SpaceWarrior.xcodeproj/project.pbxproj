@@ -229,6 +229,8 @@
 		CE2ACFB716DE3C9A00A26673 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2ACFB416DE3C9A00A26673 /* loading.png */; };
 		CE2ACFB816DE3C9A00A26673 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2ACFB516DE3C9A00A26673 /* logo.png */; };
 		CE2ACFB916DE3C9A00A26673 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2ACFB616DE3C9A00A26673 /* menu.png */; };
+		CE5261AA16DF9050001D6F9C /* AboutLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE5261A816DF9050001D6F9C /* AboutLayer.cpp */; };
+		CE5261AE16DF9062001D6F9C /* OptionLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE5261AC16DF9062001D6F9C /* OptionLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -690,6 +692,10 @@
 		CE2ACFB416DE3C9A00A26673 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = Resources/loading.png; sourceTree = "<group>"; };
 		CE2ACFB516DE3C9A00A26673 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
 		CE2ACFB616DE3C9A00A26673 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Resources/menu.png; sourceTree = "<group>"; };
+		CE5261A816DF9050001D6F9C /* AboutLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AboutLayer.cpp; path = Classes/layer/AboutLayer.cpp; sourceTree = "<group>"; };
+		CE5261A916DF9050001D6F9C /* AboutLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutLayer.h; path = Classes/layer/AboutLayer.h; sourceTree = "<group>"; };
+		CE5261AC16DF9062001D6F9C /* OptionLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OptionLayer.cpp; path = Classes/layer/OptionLayer.cpp; sourceTree = "<group>"; };
+		CE5261AD16DF9062001D6F9C /* OptionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionLayer.h; path = Classes/layer/OptionLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1604,6 +1610,10 @@
 				CE14005116DE46F90090FDE1 /* GameResources.h */,
 				CE14005716DE4B010090FDE1 /* GamingLayer.cpp */,
 				CE14005816DE4B010090FDE1 /* GamingLayer.h */,
+				CE5261A816DF9050001D6F9C /* AboutLayer.cpp */,
+				CE5261A916DF9050001D6F9C /* AboutLayer.h */,
+				CE5261AC16DF9062001D6F9C /* OptionLayer.cpp */,
+				CE5261AD16DF9062001D6F9C /* OptionLayer.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1881,6 +1891,8 @@
 				CE2ACF9F16DE2E4700A26673 /* AppDelegate.cpp in Sources */,
 				CE2ACFAD16DE3AD300A26673 /* WelcomeLayer.cpp in Sources */,
 				CE14005916DE4B010090FDE1 /* GamingLayer.cpp in Sources */,
+				CE5261AA16DF9050001D6F9C /* AboutLayer.cpp in Sources */,
+				CE5261AE16DF9062001D6F9C /* OptionLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

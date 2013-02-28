@@ -8,6 +8,7 @@
 
 #include "WelcomeLayer.h"
 #include "GamingLayer.h"
+#include "AboutLayer.h"
 
 WelcomeLayer::WelcomeLayer(){}
 WelcomeLayer::~WelcomeLayer(){}
@@ -123,9 +124,10 @@ void WelcomeLayer::menu_startgame_callback( CCObject* pSender ){
 
 //  关于选项的回调事件
 void WelcomeLayer::menu_option_callback( CCObject* pSender ){
+    
      CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(button_effect_sound);
     
-        CCLOG( "OPTION" );
+     CCLOG( "OPTION" );
 }
 
 //  关于游戏的回调事件
@@ -134,4 +136,13 @@ void WelcomeLayer::menu_about_callback( CCObject* pSender ){
      CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(button_effect_sound);
     
         CCLOG( "ABOUT GAME" );
+    
+    
+    CCDirector::sharedDirector()->pushScene( CCTransitionFade::create( 0.5f, AboutLayer::scene()));
+
 }
+
+
+
+
+

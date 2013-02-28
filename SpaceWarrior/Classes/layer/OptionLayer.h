@@ -11,4 +11,25 @@
 
 #include <iostream>
 
+#include "cocos2d.h"
+#include "GameResources.h"
+#include "SimpleAudioEngine.h"
+USING_NS_CC;
+
+class OptionLayer: public CCLayer
+{
+public:
+    OptionLayer();
+    ~OptionLayer();
+    
+    
+    virtual bool init();
+    
+    static CCScene* scene();
+    
+    CREATE_FUNC( OptionLayer )
+    
+    
+};
+
 #endif /* defined(__SpaceWarrior__OptionLayer__) */
